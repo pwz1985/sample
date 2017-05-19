@@ -1,3 +1,7 @@
+var path = require('path')
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+
 module.exports = {
   entry: "./src/index.tsx",
   output: {
@@ -21,5 +25,15 @@ module.exports = {
       // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
-  }
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 3000
+  },
+  plugins: [new HtmlWebpackPlugin({
+    filename: 'index.html',
+    template: 'src/index.html'
+  })]
+
 };
