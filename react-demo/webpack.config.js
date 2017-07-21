@@ -11,6 +11,7 @@ var config = {
     modules: [path.resolve(__dirname, "src"), "node_modules"],
     extensions: [".web.js", ".js", ".ts", ".tsx", ".json"]
   },
+  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [{
         test: /\.tsx?$/,

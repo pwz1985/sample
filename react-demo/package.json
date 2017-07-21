@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node tools/build.js",
-    "start": "webpack-dev-server"
+    "start": "node ./node_modules/bin/webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
