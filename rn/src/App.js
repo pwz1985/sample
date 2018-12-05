@@ -5,15 +5,26 @@ import {
   createSwitchNavigator,
   createBottomTabNavigator,
 } from 'react-navigation';
-import { Image } from 'react-native';
+import { Image, StyleSheet, SafeAreaView } from 'react-native';
 import ForgotPassword from './ForgotPassword';
 import SignIn from './SignIn';
 import HomeScreen from './HomeScreen';
 import Me from './Me';
 
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    // backgroundColor: '#ddd',
+  },
+});
+
 export default class App extends Component {
   render() {
-    return <AppContainer />;
+    return (
+      <SafeAreaView style={styles.safeArea}>
+        <AppContainer />
+      </SafeAreaView>
+    );
   }
 }
 
