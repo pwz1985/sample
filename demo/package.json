@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "7.1.0",
     "@svgr/webpack": "2.4.1",
+    "antd-mobile": "^2.2.6",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
@@ -33,6 +34,7 @@
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "mini-css-extract-plugin": "0.4.3",
+    "mobx": "^5.7.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.1.0",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -57,9 +59,6 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",
@@ -108,9 +107,7 @@
       "node"
     ]
   },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
+  "devDependencies": {
+    "babel-plugin-import": "^1.11.0"
   }
 }
