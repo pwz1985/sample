@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.19'
+    id 'org.jetbrains.intellij' version '0.4.22'
 }
 
 group 'org.example'
@@ -8,10 +8,15 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-//    maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
-//    maven { url 'https://maven.aliyun.com/repository/google' }
-//    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-//    maven { url 'https://maven.aliyun.com/repository/jcenter'}
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+    maven {
+        url 'https://jetbrains.bintray.com/intellij-plugin-service'
+    }
+    maven {
+        url 'https://jetbrains.bintray.com/intellij-third-party-dependencies'
+    }
 }
 
 dependencies {
@@ -21,7 +26,7 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     plugins 'java'
-    version '2020.1.1'
+    version '2020.2'
 }
 
 patchPluginXml {
