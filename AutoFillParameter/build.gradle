@@ -23,8 +23,9 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2020.3'
+//     version '2019.3'
 //    localPath 'D:\\JetBrains\\IntelliJ_IDEA_2020.3.2'
+   localPath '/Applications/IntelliJ IDEA.app'
     plugins = ['java']
 }
 patchPluginXml {
