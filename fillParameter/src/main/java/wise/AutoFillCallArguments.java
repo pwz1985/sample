@@ -32,7 +32,6 @@ import java.util.stream.Stream;
 
 public class AutoFillCallArguments extends PsiElementBaseIntentionAction {
 
-    @Override
     public void invoke(@NotNull final Project project, final Editor editor, @NotNull final PsiElement psiElement) throws IncorrectOperationException {
         ApplicationManager.getApplication().assertIsDispatchThread();
         PsiDocumentManager.getInstance(project).commitAllDocuments();
@@ -103,13 +102,11 @@ public class AutoFillCallArguments extends PsiElementBaseIntentionAction {
 
     @Nls
     @NotNull
-    @Override
     public String getFamilyName() {
         return getText();
     }
 
     @NotNull
-    @Override
     public String getText() {
         return "Auto fill call parameters";
     }
