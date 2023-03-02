@@ -4,31 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93e489ba-50d1-43cc-8317-333f523d4331" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinScripting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/src/main/java/wise/AutoFillCallArguments.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AutoFillParameter/src/main/resources/META-INF/plugin.xml" beforeDir="false" />
+    <list default="true" id="93e489ba-50d1-43cc-8317-333f523d4331" name="Changes" comment="1111">
+      <change beforePath="$PROJECT_DIR$/../concurrent/src/main/java/org/wise/sample/concurrent/future/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../concurrent/src/main/java/org/wise/sample/concurrent/future/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/wise/AutoFillCallArguments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wise/AutoFillCallArguments.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -67,6 +59,11 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="fillParameter" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="fillParameter" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -107,7 +104,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.fillParameter [clean]">
+  <component name="RunManager" selected="Gradle.fillParameter [assemble]">
     <configuration name="fillParameter [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -171,22 +168,43 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="fillParameter" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runIde" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.fillParameter [assemble]" />
+      <item itemvalue="Gradle.fillParameter" />
+      <item itemvalue="Gradle.fillParameter [build]" />
+      <item itemvalue="Gradle.fillParameter [clean]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.fillParameter [clean]" />
-        <item itemvalue="Gradle.fillParameter [build]" />
         <item itemvalue="Gradle.fillParameter [assemble]" />
+        <item itemvalue="Gradle.fillParameter [clean]" />
+        <item itemvalue="Gradle.fillParameter" />
+        <item itemvalue="Gradle.fillParameter [build]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="StandaloneScriptsStorage">
-    <option name="files">
-      <set>
-        <option value="$PROJECT_DIR$/build.gradle.kts" />
-      </set>
-    </option>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="93e489ba-50d1-43cc-8317-333f523d4331" name="Changes" comment="" />
@@ -202,7 +220,29 @@
       <workItem from="1670897373817" duration="13000" />
       <workItem from="1670897447919" duration="2136000" />
       <workItem from="1670899593414" duration="5053000" />
+      <workItem from="1670919206276" duration="227000" />
+      <workItem from="1670920137549" duration="744000" />
+      <workItem from="1671007144963" duration="1814000" />
+      <workItem from="1672212077877" duration="2756000" />
+      <workItem from="1672363893157" duration="10000" />
+      <workItem from="1672379822022" duration="984000" />
+      <workItem from="1677738862222" duration="1154000" />
     </task>
+    <task id="LOCAL-00001" summary="1111">
+      <created>1670919294888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670919294888</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1111">
+      <created>1670924282093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670924282093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +251,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
+    <MESSAGE value="1111" />
+    <option name="LAST_COMMIT_MESSAGE" value="1111" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

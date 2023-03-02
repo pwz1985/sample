@@ -28,8 +28,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-//import com.intellij.psi.infos.CandidateInfo;
-
 public class AutoFillCallArguments extends PsiElementBaseIntentionAction {
 
     public void invoke(@NotNull final Project project, final Editor editor, @NotNull final PsiElement psiElement) throws IncorrectOperationException {
@@ -222,7 +220,6 @@ public class AutoFillCallArguments extends PsiElementBaseIntentionAction {
         PsiElement parent = element.getParent();
         System.out.println(parent);
         if (parent == null) {
-            return;
         } else if (PsiMethod.class.isAssignableFrom(element.getClass())) {
             PsiMethod psiMethod = (PsiMethod) element;
             PsiParameterList parameterList = psiMethod.getParameterList();
