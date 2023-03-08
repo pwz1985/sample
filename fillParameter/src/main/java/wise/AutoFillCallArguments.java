@@ -5,7 +5,6 @@ import com.intellij.codeInsight.intention.PsiElementBaseIntentionAction;
 import com.intellij.lang.Language;
 import com.intellij.lang.parameterInfo.LanguageParameterInfo;
 import com.intellij.lang.parameterInfo.ParameterInfoHandler;
-import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.DumbService;
@@ -31,12 +30,7 @@ import java.util.stream.Stream;
 public class AutoFillCallArguments extends PsiElementBaseIntentionAction {
 
     public void invoke(@NotNull final Project project, final Editor editor, @NotNull final PsiElement psiElement) throws IncorrectOperationException {
-        ApplicationManager.getApplication().assertIsDispatchThread();
         PsiDocumentManager.getInstance(project).commitAllDocuments();
-
-        if (psiElement == null) {
-            return;
-        }
 
         final PsiMethodCallExpression call = PsiTreeUtil.getParentOfType(psiElement, PsiMethodCallExpression.class);
         if (call == null) {
@@ -51,13 +45,7 @@ public class AutoFillCallArguments extends PsiElementBaseIntentionAction {
             }
         }
         final PsiParameterList parameterList = psiMethod.getParameterList();
-        if (parameterList == null) {
-            return;
-        }
         final PsiParameter[] params = parameterList.getParameters();
-        if (params == null) {
-            return;
-        }
 
         // 当前光标的offset
         int offset = editor.getCaretModel().getOffset();
